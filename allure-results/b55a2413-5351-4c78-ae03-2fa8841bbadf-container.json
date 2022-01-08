@@ -1,0 +1,1 @@
+{"uuid":"b55a2413-5351-4c78-ae03-2fa8841bbadf","name":"qaautomation.november2021.AppTestAssertContains.setUp","description":"","start":1638592102771,"stop":1638592124684,"children":["26ceb5ab-7906-4469-8f73-9e7977b31cfb"],"befores":[{"name":"setUp","status":"passed","stage":"finished","description":"","start":1638592102772,"stop":1638592124683}]}

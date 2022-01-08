@@ -1,0 +1,1 @@
+{"uuid":"53bd9fe7-2ace-4f31-93c8-4d62f7bd10e8","name":"qaautomation.november2021.SeleniumHeadless.setUp","description":"","start":1639190052598,"stop":1639190071288,"children":["6df61664-1113-4f3f-9000-63a96511fcfd"],"befores":[{"name":"setUp","status":"passed","stage":"finished","description":"","start":1639190052599,"stop":1639190071288}]}

@@ -1,0 +1,7 @@
+#surefire_0
+#Sat Jan 08 09:56:15 ICT 2022
+surefire.suiteXmlFiles=APITestSuite.xml
+user.dir=D\:\\BoothCamp QA Automation\\november2021
+env=prod
+localRepository=C\:\\Users\\Gandreva PC\\.m2\\repository
+basedir=D\:\\BoothCamp QA Automation\\november2021

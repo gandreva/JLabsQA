@@ -1,0 +1,8 @@
+qaautomation\november2021\App.class
+qaautomation\november2021\pages\CommonPage.class
+qaautomation\november2021\pages\LoginPage.class
+qaautomation\november2021\pages\ProfilePage.class
+qaautomation\november2021\utils\DataUtility.class
+qaautomation\november2021\pages\BasePage.class
+qaautomation\november2021\utils\APIUtility.class
+qaautomation\november2021\utils\TestUtility.class

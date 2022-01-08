@@ -1,0 +1,1 @@
+{"uuid":"d33e1e65-c816-4d62-9aa1-6f0301b1befe","name":"qaautomation.november2021.SeleniumHeadless.tearDown","description":"","start":1641098719770,"stop":1641098720384,"children":["3d62b72d-4ffc-4d60-acf3-943c28434040"],"afters":[{"name":"tearDown","status":"passed","stage":"finished","description":"","start":1641098719770,"stop":1641098720384}]}
