@@ -6,16 +6,14 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class ProfilePage extends BasePage {
-
-	String profileTextPath = "//strong[normalize-space()='%s']";
-
+	By title = By.xpath("//span[@class='title']");
+	
 	public ProfilePage(ThreadLocal<WebDriver> driver, ThreadLocal<WebDriverWait> explicitWait) {
 		super(driver, explicitWait);
 		PageFactory.initElements(driver.get(), this);
 	}
 
-	public String getProfileText(String username) {
-		By profileTextXpath = By.xpath(String.format(profileTextPath, username));
-		return getText(profileTextXpath);
+	public String getProfileText(String ignoredParam) {
+		return getText(title);
 	}
 }

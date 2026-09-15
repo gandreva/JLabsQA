@@ -22,11 +22,16 @@ public class BaseWebHeadless {
 	public void createDriver() {
 		WebDriverManager.chromedriver().setup();
 		ChromeOptions options = new ChromeOptions();
-		options.addArguments("--headless", "--disable-gpu", "--window-size=1920,1200", "--ignore-certificate-error",
-				"--disable-extensions", "--no-sandbox", "--disable-dev-shm-usage");
+		options.addArguments("--remote-allow-origins=*");
+		if ("true".equalsIgnoreCase(System.getProperty("headless"))) {
+			options.addArguments("--headless=new");
+			options.addArguments("--no-sandbox");
+			options.addArguments("--disable-dev-shm-usage");
+			options.addArguments("--window-size=1920,1080");
+		}
 		driver.set(new ChromeDriver(options));
-		driver.get().get("https://testautomasi.com");
 		driver.get().manage().window().maximize();
+		driver.get().get("https://www.saucedemo.com");
 		explicitWait.set(new WebDriverWait(driver.get(), Duration.ofSeconds(60)));
 	}
 
@@ -52,6 +57,8 @@ public class BaseWebHeadless {
 
 	@AfterMethod
 	public void quitDriver() {
-		driver.get().quit();
+		if (driver.get() != null) {
+			driver.get().quit();
+		}
 	}
 }

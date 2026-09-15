@@ -20,9 +20,17 @@ public class BaseWebTest {
 	@BeforeMethod
 	public void createDriver() {
 		WebDriverManager.chromedriver().setup();
-		driver.set(new ChromeDriver());
-		driver.get().get("https://testautomasi.com");
+		org.openqa.selenium.chrome.ChromeOptions options = new org.openqa.selenium.chrome.ChromeOptions();
+		options.addArguments("--remote-allow-origins=*");
+		if ("true".equalsIgnoreCase(System.getProperty("headless"))) {
+			options.addArguments("--headless=new");
+			options.addArguments("--no-sandbox");
+			options.addArguments("--disable-dev-shm-usage");
+			options.addArguments("--window-size=1920,1080");
+		}
+		driver.set(new ChromeDriver(options));
 		driver.get().manage().window().maximize();
+		driver.get().get("https://www.saucedemo.com");
 		explicitWait.set(new WebDriverWait(driver.get(), Duration.ofSeconds(60)));
 	}
 
@@ -48,6 +56,8 @@ public class BaseWebTest {
 
 	@AfterMethod
 	public void quitDriver() {
-		driver.get().quit();
+		if (driver.get() != null) {
+			driver.get().quit();
+		}
 	}
 }

@@ -1,51 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="6" passed="6">
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="18902" started-at="2022-01-08T02:56:17Z" finished-at="2022-01-08T02:56:36Z">
+  <suite started-at="2026-09-15T09:36:13Z" name="Suite" finished-at="2026-09-15T09:36:23Z" duration-ms="9575">
     <groups>
     </groups>
-    <test name="Test" duration-ms="18902" started-at="2022-01-08T02:56:17Z" finished-at="2022-01-08T02:56:36Z">
-      <class name="qaautomation.november2021.APITest">
-        <test-method status="PASS" signature="testLoginAPI()[pri:1, instance:qaautomation.november2021.APITest@2552f2cb]" name="testLoginAPI" duration-ms="2052" started-at="2022-01-08T02:56:30Z" finished-at="2022-01-08T02:56:32Z">
+    <test started-at="2026-09-15T09:36:13Z" name="Test" finished-at="2026-09-15T09:36:23Z" duration-ms="9575">
+      <class name="qaautomation.november2021.AppTestAssertContains">
+        <test-method is-config="true" signature="createDriver()[pri:0, instance:qaautomation.november2021.AppTestAssertContains@e15b7e8]" started-at="2026-09-15T09:36:13Z" name="createDriver" finished-at="2026-09-15T09:36:20Z" duration-ms="6635" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testLoginAPI -->
-        <test-method status="PASS" signature="dashboardAPI()[pri:2, instance:qaautomation.november2021.APITest@2552f2cb]" name="dashboardAPI" duration-ms="2060" started-at="2022-01-08T02:56:32Z" finished-at="2022-01-08T02:56:34Z">
+        </test-method> <!-- createDriver -->
+        <test-method signature="testDrivenMethod()[pri:0, instance:qaautomation.november2021.AppTestAssertContains@e15b7e8]" started-at="2026-09-15T09:36:20Z" name="testDrivenMethod" description="login will be working just fine" finished-at="2026-09-15T09:36:21Z" duration-ms="855" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- dashboardAPI -->
-        <test-method status="PASS" signature="userAPI()[pri:3, instance:qaautomation.november2021.APITest@2552f2cb]" name="userAPI" duration-ms="1921" started-at="2022-01-08T02:56:34Z" finished-at="2022-01-08T02:56:36Z">
+        </test-method> <!-- testDrivenMethod -->
+        <test-method is-config="true" signature="quitDriver()[pri:0, instance:qaautomation.november2021.AppTestAssertContains@e15b7e8]" started-at="2026-09-15T09:36:21Z" name="quitDriver" finished-at="2026-09-15T09:36:23Z" duration-ms="1907" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- userAPI -->
-      </class> <!-- qaautomation.november2021.APITest -->
-      <class name="qaautomation.november2021.APITestAfterRefactor">
-        <test-method status="PASS" signature="login()[pri:0, instance:qaautomation.november2021.APITestAfterRefactor@3ebff828]" name="login" is-config="true" duration-ms="4157" started-at="2022-01-08T02:56:17Z" finished-at="2022-01-08T02:56:21Z">
+        </test-method> <!-- quitDriver -->
+      </class> <!-- qaautomation.november2021.AppTestAssertContains -->
+      <class name="qaautomation.november2021.AppTest">
+        <test-method is-config="true" signature="createDriver()[pri:0, instance:qaautomation.november2021.AppTest@1b2abca6]" started-at="2026-09-15T09:36:13Z" name="createDriver" finished-at="2026-09-15T09:36:20Z" duration-ms="6644" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- login -->
-        <test-method status="PASS" signature="configAPI()[pri:0, instance:qaautomation.november2021.APITestAfterRefactor@3ebff828]" name="configAPI" duration-ms="1817" started-at="2022-01-08T02:56:21Z" finished-at="2022-01-08T02:56:23Z">
+        </test-method> <!-- createDriver -->
+        <test-method is-config="true" signature="setUpPages()[pri:0, instance:qaautomation.november2021.AppTest@1b2abca6]" started-at="2026-09-15T09:36:20Z" name="setUpPages" finished-at="2026-09-15T09:36:20Z" duration-ms="12" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- configAPI -->
-        <test-method status="PASS" signature="login()[pri:0, instance:qaautomation.november2021.APITestAfterRefactor@3ebff828]" name="login" is-config="true" duration-ms="2157" started-at="2022-01-08T02:56:23Z" finished-at="2022-01-08T02:56:25Z">
+        </test-method> <!-- setUpPages -->
+        <test-method signature="test1()[pri:0, instance:qaautomation.november2021.AppTest@1b2abca6]" started-at="2026-09-15T09:36:20Z" name="test1" description="login will be working just fine" finished-at="2026-09-15T09:36:21Z" duration-ms="878" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- login -->
-        <test-method status="PASS" signature="dashboardAPI()[pri:0, instance:qaautomation.november2021.APITestAfterRefactor@3ebff828]" name="dashboardAPI" duration-ms="2381" started-at="2022-01-08T02:56:25Z" finished-at="2022-01-08T02:56:28Z">
+        </test-method> <!-- test1 -->
+        <test-method is-config="true" signature="quitDriver()[pri:0, instance:qaautomation.november2021.AppTest@1b2abca6]" started-at="2026-09-15T09:36:21Z" name="quitDriver" finished-at="2026-09-15T09:36:21Z" duration-ms="345" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- dashboardAPI -->
-        <test-method status="PASS" signature="login()[pri:0, instance:qaautomation.november2021.APITestAfterRefactor@3ebff828]" name="login" is-config="true" duration-ms="2139" started-at="2022-01-08T02:56:28Z" finished-at="2022-01-08T02:56:30Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- login -->
-        <test-method status="PASS" signature="fakerTest()[pri:0, instance:qaautomation.november2021.APITestAfterRefactor@3ebff828]" name="fakerTest" duration-ms="115" started-at="2022-01-08T02:56:30Z" finished-at="2022-01-08T02:56:30Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- fakerTest -->
-      </class> <!-- qaautomation.november2021.APITestAfterRefactor -->
+        </test-method> <!-- quitDriver -->
+      </class> <!-- qaautomation.november2021.AppTest -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>
